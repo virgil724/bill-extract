@@ -1,9 +1,9 @@
 {
   "name": "bill-extract",
-  "displayName": "bill-extract",
-  "version": "0.0.0",
+  "displayName": "帳單提取器",
+  "version": "1.0.0",
   "author": "virgil246",
-  "description": "",
+  "description": "自動提取玉山銀行電子帳單資料的瀏覽器擴展",
   "type": "module",
   "license": "MIT",
   "keywords": [
@@ -19,8 +19,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "fmt": "prettier --write '**/*.{vue,js,json,css,scss,md}'",
-    "zip": "npm run build && node src/zip.js"
+    "fmt": "prettier --write '**/*.{vue,js,json,css,scss,md}'"
   },
   "dependencies": {
     "vue": "^3.2.37"
@@ -28,8 +27,6 @@
   "devDependencies": {
     "@crxjs/vite-plugin": "^2.0.0-beta.19",
     "@vitejs/plugin-vue": "^4.4.0",
-    "gulp": "^4.0.2",
-    "gulp-zip": "^6.0.0",
     "prettier": "^3.0.3",
     "vite": "^4.4.11"
   }

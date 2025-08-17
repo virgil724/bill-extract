@@ -17,9 +17,20 @@ export default defineConfig(({ mode }) => {
         },
       },
     },
-    legacy: {
-      skipWebSocketTokenCheck: true,
+    server: {
+      port: 5173,
+      strictPort: true,
+      hmr: {
+        port: 5173,
+      },
     },
-    plugins: [crx({ manifest }), vue()],
+    plugins: [
+      crx({ 
+        manifest,
+        // 修復開發環境問題
+        browser: 'chrome',
+      }), 
+      vue()
+    ],
   }
 })

@@ -1,5 +1,4 @@
 import { createApp } from 'vue'
+import Sidepanel from './Sidepanel.vue'
 
-import SidePanel from './SidePanel.vue'
-
-createApp(SidePanel).mount('#app')
+createApp(Sidepanel).mount('#app')
